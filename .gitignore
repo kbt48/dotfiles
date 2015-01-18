@@ -1,0 +1,10 @@
+*.txt
+*.log
+
+# Compiled Python files
+*.pyc
+
+# Windows/Mac system files
+Thumbs.db
+.netrwhist
+.DS_Store

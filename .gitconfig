@@ -1,0 +1,17 @@
+[user]
+	name = kbt48
+	email = hiro.k.0805+github@gmail.com
+[core]
+	editor = /usr/local/vim74/bin/vim
+[color]
+	status = auto
+	diff = auto
+	ranch = auto
+	interactive = auto
+	grep = auto
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\\\"%h %ad | %s%d [%an]\\\" --graph --date=short
