@@ -2,7 +2,7 @@
 	name = kbt48
 	email = hiro.k.0805+github@gmail.com
 [core]
-	editor = /usr/local/vim74/bin/vim
+	editor = vim
 [color]
 	status = auto
 	diff = auto

@@ -15,8 +15,7 @@ alias ls='ls -lX --group-directories-first'
 alias ll='ls -AlX --group-directories-first'
 alias mv='mv -i'
 alias rm='rm -i'
-alias vi='/usr/local/vim74/bin/vim'
-alias vim='/usr/local/vim74/bin/vim'
+alias vi='vim'
 alias dl='docker ps -l -q'
 
 # [Prompt]
