@@ -70,4 +70,8 @@ function share_history {
 	history -r
 }
 
+if [ -x /usr/bin/keychain ]; then
+    eval $(keychain --eval --agents ssh --quiet id_ed25519)
+fi
+
 export PATH="$HOME/.local/share/mise/shims:$PATH"
