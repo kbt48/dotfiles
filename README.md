@@ -61,4 +61,19 @@ mise run setup
 - `.bashrc`
 - `.tmux.conf`
 - `.gitconfig`
-- `.gitignore`
+- .gitignore
+
+## 運用・メンテナンス
+
+### ツールのアップグレード
+"latest" 指定のツールを一括で最新版にする：
+```bash
+mise upgrade
+```
+
+### 古いバージョンの削除
+使われていない過去のバージョンを削除してディスクを整理する：
+```bash
+mise prune
+```
+
