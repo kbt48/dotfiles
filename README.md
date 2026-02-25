@@ -1,0 +1,64 @@
+# dotfiles
+
+miseを使って開発環境とツールを管理するための設定集。
+
+## 構成
+- **ツール管理**: `mise.toml` で使用ツールとバージョンを一括定義。
+- **設定ファイル**: `.vimrc`, `.bashrc`, `.tmux.conf` などのリンクを自動作成。
+
+## セットアップ手順
+
+### 1. miseのインストール
+まだインストールしていない場合は、[miseの公式サイト](https://mise.jdx.dev/)に従って導入すること。
+
+### 2. ツールのインストール
+リポジトリ内の `mise.toml` に基づいて、必要なツールをインストールする。
+
+```bash
+mise install
+```
+
+### 3. 設定ファイルの展開
+ホームディレクトリに各設定ファイルのシンボリックリンクを作成する。
+
+```bash
+mise run setup
+```
+
+## 管理ツール一覧
+現在の `mise.toml` で管理しているツール：
+
+### 開発言語・パッケージマネージャ
+- python (3.12)
+- uv
+
+### クラウド・インフラ
+- awscli
+- azure-cli
+- terraform
+- sops
+- age
+
+### Kubernetes 関連
+- kubectl
+- helm
+- kustomize
+- flux2
+- talosctl
+- talhelper
+- stern
+
+### kubectl プラグイン
+- neat (itaysk/kubectl-neat)
+- get-all (corneliusweig/ketall)
+- status (bergerx/kubectl-status)
+- tree (ahmetb/kubectl-tree)
+- kubectx / kubens
+
+## リンク対象ファイル
+`setup` タスクで以下のシンボリックリンクが作成される：
+- `.vimrc`
+- `.bashrc`
+- `.tmux.conf`
+- `.gitconfig`
+- `.gitignore`

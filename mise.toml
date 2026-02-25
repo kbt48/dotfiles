@@ -13,6 +13,17 @@ kustomize = "latest"
 sops = "latest"
 talhelper = "latest"
 talosctl = "latest"
+terraform = "latest"
+
+kubectx = "latest"
+kubens = "latest"
+stern = "latest"
+
+# kubectl plugins (managed via github)
+"github:itaysk/kubectl-neat" = "latest"
+"github:corneliusweig/ketall" = "latest"
+"github:bergerx/kubectl-status" = "latest"
+"github:ahmetb/kubectl-tree" = "latest"
 
 [tasks."setup"]
 description = "dotfilesのシンボリックリンクをホームディレクトリに作成します"
