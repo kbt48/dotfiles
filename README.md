@@ -44,6 +44,7 @@ mise run setup
 - helm
 - kustomize
 - flux2
+- k9s
 - talosctl
 - talhelper
 - stern
