@@ -1,0 +1,36 @@
+[tools]
+python = "3.12"
+uv = "latest"
+
+# cloud tools
+age = "latest"
+awscli = "latest"
+azure-cli = "latest"
+flux2 = "latest"
+helm = "latest"
+kubectl = "latest"
+kustomize = "latest"
+sops = "latest"
+talhelper = "latest"
+talosctl = "latest"
+terraform = "latest"
+
+kubectx = "latest"
+kubens = "latest"
+stern = "latest"
+
+# kubectl plugins (managed via github)
+"github:itaysk/kubectl-neat" = "latest"
+"github:corneliusweig/ketall" = "latest"
+"github:bergerx/kubectl-status" = "latest"
+"github:ahmetb/kubectl-tree" = "latest"
+
+[tasks."setup"]
+description = "dotfilesのシンボリックリンクをホームディレクトリに作成します"
+run = """
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/.gitignore ~/.gitignore
+"""
