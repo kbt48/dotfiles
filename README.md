@@ -11,6 +11,12 @@ miseを使って開発環境とツールを管理するための設定集。
 ### 1. miseのインストール
 まだインストールしていない場合は、[miseの公式サイト](https://mise.jdx.dev/)に従って導入すること。
 
+また、シェル（bash等）でmiseを有効化するために、以下の設定を `.bashrc` 等に追加する必要がある。
+
+```bash
+echo 'export PATH="$HOME/.local/share/mise/shims:$PATH"' >> ~/.bashrc
+```
+
 ### 2. ツールのインストール
 リポジトリ内の `mise.toml` に基づいて、必要なツールをインストールする。
 
@@ -70,6 +76,12 @@ mise run setup
 "latest" 指定のツールを一括で最新版にする：
 ```bash
 mise upgrade
+```
+
+### ツールの再インストール
+何らかの理由でツールを強制的にインストールし直す：
+```bash
+mise install -f
 ```
 
 ### 古いバージョンの削除

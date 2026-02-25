@@ -69,3 +69,5 @@ function share_history {
 	history -c
 	history -r
 }
+
+export PATH="$HOME/.local/share/mise/shims:$PATH"
