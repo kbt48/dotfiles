@@ -15,6 +15,7 @@ sops = "latest"
 talhelper = "latest"
 talosctl = "latest"
 terraform = "latest"
+yq = "latest"
 
 kubectx = "latest"
 kubens = "latest"
