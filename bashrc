@@ -80,4 +80,3 @@ export SOPS_AGE_KEY_FILE=$HOME/.config/sops/age/keys.txt
 if [ -x /usr/bin/keychain ]; then
     eval $(keychain --eval --agents ssh --quiet id_ed25519)
 fi
-
